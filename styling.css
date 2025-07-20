@@ -309,9 +309,8 @@ header{
 }
 .list-box{
     background-color: rgba(245, 245, 245, 0.516);
-    max-width: 300px;
+    width: 275px;
     min-height: 17vh;
-    min-width: 25%;
     padding: 2vh;
     display: flex;
     justify-content: center;
