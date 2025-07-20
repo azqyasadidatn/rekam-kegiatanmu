@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekam Kegiatanmu</title>
+    <link rel="stylesheet" href="styling.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..
+1000&family=Bitcount+Grid+Double:wght@100..900&family=Cherry+Bomb+One&family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Quicksand:wght@300..
+700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="wrap-atas">
+    <!-- =====================judul atas nya======================= -->
+    <section class="judul">
+        <h2 class="title">Activity</h2>
+        <p>Rekam kegiatan yang akan kamu lakukan agar kamu lebih produktiv</p>
+    </section>
+   
+    <!-- =====================box kegiatan nya======================= -->
+
+    <section class="box-wrep">
+        <div class="box-activity" id="boxKegiatan">
+            <div id="box">
+                <h3>New Playlist</h3>
+                <div class="box-input">
+                <input id="name" type="text" placeholder="" required>
+                <button id="btn" onclick="addNewPlylist()">Simpan</button>
+              </div>
+            </div>
+        </div>
+        <div class="newPlaylist"></div>
+    </section>
+</section>
+<div id="confirmModal" class="modal">
+  <div class="modal-content">
+      <h3>Konfirmasi Hapus</h3>
+      <p>Apakah Anda yakin ingin menghapus daftar ini?</p>
+      <div class="modal-buttons">
+          <button class="confirm-btn" id="modalConfirmBtn">Ya, Hapus</button>
+          <button class="cancel-btn" id="modalCancelBtn">Batal</button>
+      </div>
+  </div>
+</div>
+<section class="list-wrep">
+  <div class="all-item">
+    <header>
+        <h1>Daftar Tugas Hari Ini</h1>
+        <h5>Jangan Lupa Dikerjakan Yaaa</h5>
+    </header>
+    <div class="dashboard-view"> </div>
+    <div id="task-list-view" class="wrap">
+        <input type="text" id="text" placeholder="Isi dengan Tugas Kamu">
+        <button id="btn" onclick="activity()">Simpan</button>
+        <div id="listTugas"></div>
+    </div>
+    <div class="btn-back">
+      <button id="backBtn" onclick="backTo()" >Back</button>
+    </div>
+</div>
+
+</section>
+    <!-- =====================footernya======================= -->
+
+    <footer class="footer">
+        <div class="footer-teks">
+          <p>© 2025 Website by Azqya</p>
+        </div>
+        <div class="footer-links">
+  
+            <a href="https://www.instagram.com/qqqqq_nnisa?igsh=MW40b3JjdTk0dXVvZQ==" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram </a>
+  
+            <a href="https://wa.me/message/M63NNRU5ODOSO1" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp </a>
+  
+            <a href="mailto:Azqianisa@gmail.com">
+              <i class="fas fa-envelope"></i> Email </a>
+  
+            <a href="https://open.spotify.com/playlist/7D85zlIHmoVfuCTs20RR4C?si=5ece4860ea8e4053" target="_blank">
+              <i class="fab fa-spotify"></i> Spotify </a>
+  
+            <a href="https://tiktok.com/@username" target="_blank">
+              <i class="fab fa-tiktok"></i> TikTok </a>
+  
+            <a href="https://github.com/azqyasadidatn" target="_blank">
+              <i class="fab fa-github"></i> GitHub </a>
+  
+        </div>
+          
+      </footer>
+      <script src="index.js"></script>
+</body>
+</html>

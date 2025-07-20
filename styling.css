@@ -1,0 +1,385 @@
+body {
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Ancizar Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+:root{
+    --base-color :#93e4fbc6;
+    --second-base-color :#c15074;
+    --thrd-base-color:#f7fbfb4e;
+
+    --ekstra-color-1:  #9DB4C0;
+    --ekstra-color-2: #3C3A38;
+
+    --font-color-1 :#042130;
+    --main-font-color:#ffffff;
+    --font-color-2: #232323;
+    --font-color-3:#8f1139;
+}
+
+.wrap-atas{
+    display: flex;
+    min-height: 70vh;
+    background-color :#f7fbfb4e;
+    flex-direction: column;
+    height :auto;
+    width: 80%;
+    padding: 3.5vh;
+    border-radius: 10px;
+    margin-top: 1.4vh;
+    box-shadow:0 2px 5px rgba(36, 36, 72, 0.724);
+}
+.wrap-atas p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--font-color-2);
+    margin: 0.8vh;
+}
+.judul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0.5,
+      "ELSH" 0,
+      "ELXP" 0;
+      margin: 0;
+      color: var(--font-color-3);
+}
+.box-wrep{
+    display: flex;
+    flex-direction: column;
+}
+/* box tombol tombol */
+#box{
+    background-color: rgba(245, 245, 245, 0.516);
+    max-width: 300px;
+    min-height: 17vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 0.4vh;
+    box-shadow:0 2px 5px rgba(42, 41, 43, 0.748);
+    border-radius: 5px;
+    margin-top: 1.4vh;
+    flex-direction: column;
+}
+#box h3{
+    color: var(--font-color-1);
+}
+input {
+    width: 90%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 3vh;
+    box-shadow:1px 1px 2px rgba(36, 36, 72, 0.724);
+}
+button{
+    padding:0.9vh;
+    background-color: var(--second-base-color);
+    color: var(--main-font-color);
+    box-shadow:0 2px 5px rgba(36, 36, 72, 0.724);
+    font-weight: bold;
+    font-size: 2.5vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 7vh;
+    }
+button:hover{
+    background-color: var(--ekstra-color-1);
+}
+
+.list-wrep{
+    display: flex;
+    min-height: 70vh;
+    background-color :#f7fbfb4e;
+    flex-direction: column;
+    height :auto;
+    width: 80%;
+    padding: 3.5vh;
+    border-radius: 10px;
+    margin-top: 1.4vh;
+    box-shadow:0 2px 5px rgba(36, 36, 72, 0.724);
+}
+header{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    header h1{
+        margin-top: 5vh;
+        color: var(--font-color-3);
+        text-shadow:  0 3px 4px rgba(34, 0, 0, 0.831);
+        font-family: "Bitcount Grid Double", system-ui;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0,
+          "CRSV" 0.5,
+          "ELSH" 0,
+          "ELXP" 0;
+          margin: 0;
+          color: var(--font-color-3);
+    }
+    header h5{
+        margin-bottom: 5vh;
+        margin-top: 1.8vh;
+        color: #5B3B2A;
+    }
+    .wrap{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    font-family: sans-serif;
+    font-family: "Fredoka", sans-serif;
+    padding: 3vh;
+
+    height: auto;
+    }
+
+    #btn{
+    padding:0.9vh;
+    margin-top: 1hv;
+    margin-bottom: 1.7vh;
+    color: white;
+    background-color: #E6B8A2; 
+    box-shadow:0 2px 5px rgb(34, 26, 20);
+    font-weight: bold;
+    font-size: 2.5vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 40%;
+    max-width: 500px;
+    }
+    .wrap input {
+    width: 50%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    }
+    .task-item{
+    display:flex;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 6px;
+    margin-top: 1vh;
+    margin-bottom:0.9vh ;
+    border-radius: 3px;
+    background-color:  #f6d6d69f;
+    word-break: break-word;
+    } 
+    
+    #btn:hover{ 
+     background-color: var(--accent-5);
+    }
+    .button-group {
+        display: flex;
+        gap: 5px;
+    }
+    .task-item button {
+    background-color: #E6B8A2; 
+    color: white; 
+    padding: 0.5rem 0.8rem; 
+    border-radius: 4px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    flex-shrink: 0; 
+    margin-left: 10px;
+    font-weight: bold;
+    }
+
+    .task-item button:hover {
+    background-color: #d63838e1; 
+    }
+
+    .after-selesai{
+        background-color:  #b39b9bee;
+    }
+    .after-selesai span{
+        text-decoration: line-through;
+        font-style: italic;
+    }
+.btn-back{
+    position: sticky;
+    display: flex;
+    justify-content: right;
+    margin-right: 20%;
+}
+
+.list-card {
+    background-color: #fce4ce;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+.list-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.list-card h3 {
+    font-size: 1.5rem;
+    color: #5B3B2A;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+.list-card p {
+    font-size: 0.9rem;
+    color: #7a5d4d;
+}
+.list-card .delete-list-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+.list-card .delete-list-btn:hover {
+    opacity: 1;
+    background-color: #dc2626;
+}
+.modal{
+    display: none;
+    background-color: var(--main-font-color);
+    padding: 2rem;
+    border-radius: 10px;
+    color:var(--font-color-3);
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    top: 5rem;
+    
+}
+
+/* ================BOX================ */
+.newPlaylist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.list-box{
+    background-color: rgba(245, 245, 245, 0.516);
+    max-width: 300px;
+    min-height: 17vh;
+    min-width: 25%;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 0.4vh;
+    box-shadow:0 2px 5px rgba(42, 41, 43, 0.748);
+    border-radius: 5px;
+    margin-top: 1.4vh;
+    flex-direction: column;
+}
+@media (max-width :768px){
+    .wrap-atas p{
+        font-size: 0.8rem;
+    }
+    #btn{
+        width: 70%;
+    }
+   .wrap input{
+    width: 90%;
+    }
+    .task-item{
+        width: 80vw;
+    }
+    header h1{
+        font-size: 2.5vh;
+
+    }
+}
+
+/*======= footer =======*/
+.footer {
+    background-color: var(--thrd-base-color);
+    opacity: 1;
+    color:var(--font-color-1);
+    padding: 1.3rem;
+    text-align: center;
+    gap: 3.5vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: auto;
+    min-height: 16vh;
+    max-height: 70rem;
+    margin: 1.2vh;
+    width:  80%;;
+    box-shadow:0 2px 5px rgba(36, 36, 72, 0.724);
+}
+
+
+.footer-teks p{
+    padding-bottom: 1.5vh;
+    color: var(--font-color-1);
+}
+.footer-links a {
+    color: var(--second-base-color);
+  text-decoration: none;
+  margin: 0 0.6rem;
+  transition: 0.1 ease-in-out;
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.footer-links a i {
+  margin-right: 0.4rem;
+}
+
+.footer-links a:hover {
+  color:var(--base-color);
+}
+
