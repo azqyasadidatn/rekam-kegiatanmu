@@ -104,7 +104,7 @@ function activity(){
     const input = document.querySelector('#text')
     const data = input.value.trim()
     if(data && currentListId !== null){
-        const activeList = dataDaftarList.find(plylist => plylist.id === currentListId);
+        const activeList = dataDaftarList.find(plylist => plylist.id === currentListId); //mengidentifikasi dan mendapatkan akses ke objek daftar yang benar 
         if(activeList){
         activeList.tasks.push({task: data, keterangan :false})
         input.value=""
